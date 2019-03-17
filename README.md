@@ -1,2 +1,2 @@
-# demoja
+# demos
 Programming demos
