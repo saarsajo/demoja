@@ -1,2 +1,2 @@
-# demos
-Programming demos
+# demoja
+Ohjelmoinnin demoja
