@@ -1,0 +1,204 @@
+c:\users\sus scrofa domestica\documents\visual studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.csprojResolveAssemblyReference.cache
+c:\users\sus scrofa domestica\documents\visual studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kokki.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\puuma.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\aurinko.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\LaufKelner_2_3.exe
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\LaufKelner_2_3.pdb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Jypeli.dll
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Jypeli.xml
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.exe
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.pdb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\burge.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\pelaaja1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina2.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina3.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kentta1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lattia.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\salaisuus.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\monster.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lautanen.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\huuto.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus01.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus02.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus03.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus04.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\peto.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema.wma
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\sos.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\sos.wma
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\puukko.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo2.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo3.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo2.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo3.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\step.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\gulp1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\hyppy.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\jaws.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\jaws.wma
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\tausta1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\anykey.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\heittoaani.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kavely.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kipu.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema2.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema3.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuplinta.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lautanenrikki.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\voittaja.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\wheee.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\havio.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\tausta1.wma
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\omnom.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\voittaja.wma
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\havio.wma
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\happy1.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\happy2.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava2.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava3.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava4.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava5.xnb
+C:\Users\Sus Scrofa Domestica\Documents\Visual Studio 2015\Projects\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\gameOver.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kokki.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\puuma.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\aurinko.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\burge.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\pelaaja1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina2.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina3.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lattia.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\salaisuus.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\monster.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lautanen.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus01.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus02.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus03.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus04.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\puukko.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo2.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo3.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo2.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo3.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\happy1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\happy2.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava2.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava3.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava4.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava5.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\gameOver.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kentta1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\sos.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\jaws.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\tausta1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\voittaja.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\havio.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\step.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\gulp1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\peto.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\hyppy.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\anykey.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\heittoaani.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kavely.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kipu.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema1.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema2.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema3.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuplinta.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lautanenrikki.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\wheee.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\huuto.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\omnom.xnb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema.wma
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\sos.wma
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\jaws.wma
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\tausta1.wma
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\voittaja.wma
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\havio.wma
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\LaufKelner_2_3.exe
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\LaufKelner_2_3.pdb
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Jypeli.dll
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Jypeli.xml
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.csprojResolveAssemblyReference.cache
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.exe
+C:\MyTemp\ohj1\ht\maolleht\trunk\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.pdb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kokki.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\puuma.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\aurinko.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\burge.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\pelaaja1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina2.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\viina3.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lattia.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\salaisuus.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\monster.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lautanen.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus01.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus02.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus03.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\klaus04.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\puukko.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo2.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\syoppo3.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo2.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\juoppo3.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\happy1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\happy2.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava2.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava3.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava4.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\laava5.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\gameOver.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kentta1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\sos.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\jaws.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\tausta1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\voittaja.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\havio.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\step.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\gulp1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\peto.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\hyppy.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\anykey.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\heittoaani.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kavely.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kipu.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema1.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema2.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema3.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuplinta.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\lautanenrikki.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\wheee.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\huuto.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\omnom.xnb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\kuolema.wma
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\sos.wma
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\jaws.wma
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\tausta1.wma
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\voittaja.wma
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Content\havio.wma
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\LaufKelner_2_3.exe
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\LaufKelner_2_3.pdb
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Jypeli.dll
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\bin\x86\Debug\Jypeli.xml
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.csprojResolveAssemblyReference.cache
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.exe
+C:\Users\Bulbasaur\OneDrive\LaufKelner_2_3\LaufKelner_2_3\LaufKelner_2_3\obj\x86\Debug\LaufKelner_2_3.pdb

@@ -1,0 +1,619 @@
+using System;
+using System.Collections.Generic;
+using Jypeli;
+using Jypeli.Assets;
+using Jypeli.Controls;
+using Jypeli.Effects;
+using Jypeli.Widgets;
+/// <summary>
+/// @author Markku Lehtonen Santeri Saarinen
+/// @version 0.1
+/// Pelissä pelataan tarjoilijalla nimeltään Klauss. Tarkoituksena on kerätä viinaa, 
+/// heitellä asiakkaita lautasilla, syödä purilaisia ja kukistaa kokki.
+/// Pelin koodi pohjautuu Jypeli-nuorten Peliohjelmointikurssin 
+/// ja Antti-Jussi Lakasen luentomateriaaleihin
+/// Musiikit : SOS - Es Wird Viel Passier'n 
+/// </summary>
+ 
+///<summary>
+///Pelin ääniefektejä, animaatioita, laskureita ja vakioita
+/// </summary>
+public class LaufKelner2_3 : PhysicsGame
+{
+    SoundEffect huuto = LoadSoundEffect("huuto");
+    SoundEffect peto = LoadSoundEffect("peto");
+    SoundEffect omnom = LoadSoundEffect("omnom");
+    SoundEffect step = LoadSoundEffect("step");
+    SoundEffect gulp1 = LoadSoundEffect("gulp1");
+    SoundEffect hyppyaani = LoadSoundEffect("hyppy");
+    SoundEffect anykey = LoadSoundEffect("anykey");
+    SoundEffect havio = LoadSoundEffect("havio");
+    SoundEffect havio2 = LoadSoundEffect("havio2");
+    SoundEffect heittoaani = LoadSoundEffect("heittoaani");
+    SoundEffect kavely = LoadSoundEffect("kavely");
+    SoundEffect kipu = LoadSoundEffect("kipu");
+    SoundEffect kuolema1 = LoadSoundEffect("kuolema1");
+    SoundEffect kuolema2 = LoadSoundEffect("kuolema2");
+    SoundEffect kuplinta = LoadSoundEffect("kuplinta");
+    SoundEffect lautanenrikki = LoadSoundEffect("lautanenrikki");
+    SoundEffect wheee = LoadSoundEffect("wheee");
+
+    const double KENTANLEVEYS = 800;
+    const double KENTANKORKEUS = 600;
+
+    const double RUUDUN_LEVEYS = 40;
+    const double RUUDUN_KORKEUS = 40;
+
+    const double hyppy = 500;
+    const double nopeus = 150;
+
+    PlatformCharacter pelaaja1;
+
+    Image pelaajanKuva = LoadImage("pelaaja1");
+    
+    IntMeter pelaajan1Pisteet;
+
+    IntMeter pelaaja1Elama;
+
+    int maxPisteet = 999999999;
+
+    int pElamaMax = 5;
+
+    int pElamaMin = 0;
+
+    int kElamaMax = 50;
+
+    int kElamaMin = 0;
+
+    int vElamaMax = 3;
+
+    int vElamaMin = 0;
+
+    private Image[] klausKavely = LoadImages("klaus01", "klaus02", "klaus03", "klaus04");
+
+    private Image[] klausPaikallaan = LoadImages("pelaaja1");
+
+    private Image[] klausHyppy = LoadImages("klaus01");
+
+    private Image[] disko = LoadImages("happy1", "happy2");
+
+    ///LAAVA OLIS IHAN VITUN SIISTI MUTTA PITÄÄ SAADA VÄHEMMÄN RASKAAKSI
+    ///private Image[] laavaanim = LoadImages("laava", "laava2", "laava3", "laava4", "laava5");
+    ///<summary>
+    ///Luodaan painovoima ja kamera, sekä kutsutaan aliohjelmia LuoKentta() ja lisaaNappaimet ja lisaaLaskurit
+    /// </summary>
+    public override void Begin()
+    {
+        Gravity = new Vector(0, -1000);
+
+        LuoKentta();
+
+        LisaaNappaimet(pelaaja1);
+
+        Camera.Follow(pelaaja1);
+        Camera.ZoomFactor = 4.5;
+        Camera.StayInLevel = true;
+
+        LisaaLaskurit();
+
+    }
+
+
+    /// <summary>
+    /// Aliohjelman, joka luo pelikentän ja jonka sisällä on TileMap jolla objektit lisätään pelimaailmaan
+    /// </summary>
+    void LuoKentta()
+    {
+        TileMap ruudut = TileMap.FromLevelAsset("kentta1");
+        ruudut.SetTileMethod('P', LuoPelaaja1);
+        ruudut.SetTileMethod('x', LuoLattia);
+        ruudut.SetTileMethod('Z', LuoTaso);
+        ruudut.SetTileMethod('X', LuoLaava);
+        ruudut.SetTileMethod('V', LuoVastustaja);
+        ruudut.SetTileMethod('S', LuoSalaisuus);
+        ruudut.SetTileMethod('#', LuoBurger);
+        ruudut.SetTileMethod('*', LuoPiste);
+        ruudut.SetTileMethod('K', LuoKokki);
+        ruudut.Execute(RUUDUN_LEVEYS, RUUDUN_KORKEUS);
+        Level.CreateBorders();
+        Level.Background.CreateGradient(Color.Yellow, Color.OrangeRed);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma joka luo pelaaja1:n, sen elämäpalkin ja kutsuu CollissionHandlereitä
+    /// </summary>
+    /// <param Paikka johon pelaaja1 luodaan="paikka"></param>
+    /// <param pelaaja1 leveys="leveys"></param>
+    /// <param pelaaja1 korkeus="korkeus"></param>
+    void LuoPelaaja1(Vector paikka, double leveys, double korkeus)
+    {
+        pelaaja1 = new PlatformCharacter(21, 30);
+        pelaaja1.AnimWalk = new Animation(klausKavely);
+        pelaaja1.AnimWalk.FPS = 10;
+        pelaaja1.AnimIdle = new Animation(klausPaikallaan);
+        pelaaja1.AnimJump = new Animation(klausHyppy);
+        pelaaja1.Image = pelaajanKuva;
+        pelaaja1.Position = paikka;
+        pelaaja1.Mass = 4.0;
+
+        pelaaja1Elama = new IntMeter(pElamaMax, pElamaMin, pElamaMax);///Pelaajan elämäpalkki, jonka max arvo on pElamaMax ja min arvo pElamaMin
+        pelaaja1Elama.LowerLimit += delegate { PelaajaKuolee(); };
+        ProgressBar pelaajaElamaPalkki = new ProgressBar(40, 5);
+
+        pelaajaElamaPalkki.Y = pelaajaElamaPalkki.Y + 35;
+        pelaajaElamaPalkki.BindTo(pelaaja1Elama);
+        pelaajaElamaPalkki.BarColor = Color.Green;
+        pelaajaElamaPalkki.Color = Color.Black;
+        pelaajaElamaPalkki.BorderColor = Color.Black;
+        pelaaja1.Add(pelaajaElamaPalkki);
+
+        AddCollisionHandler(pelaaja1, "Piste", TormaaPiste);
+        AddCollisionHandler(pelaaja1, "Salaisuus", TormaaSalaisuus);
+        AddCollisionHandler(pelaaja1, "puukko", delegate (PhysicsObject pelaaja1, PhysicsObject puukko) { PuukkoOsuuPelaaja1(pelaaja1, puukko, pelaaja1Elama); });
+        AddCollisionHandler(pelaaja1, "Burge", delegate (PhysicsObject pelaaja1, PhysicsObject Burge) { TormaaBurgeriin(pelaaja1, Burge, pelaaja1Elama); });
+        AddCollisionHandler(pelaaja1, "vastustaja", delegate (PhysicsObject pelaaja1, PhysicsObject vastustaja) { TormaaVastustajaan(pelaaja1, vastustaja, pelaaja1Elama); });
+        AddCollisionHandler(pelaaja1, "Kokki", TormaaKokkiin);
+        AddCollisionHandler(pelaaja1, "laava", TormaaLaava);
+        AddCollisionHandler(pelaaja1, "taso", TormaaTaso);
+        Add(pelaaja1);
+            }
+
+
+    /// <summary>
+    /// Aliohjelma, joka luo lautasen ja heittää sen kun välilyöntiä painetaan
+    /// </summary>
+    /// <param lautasen nimi="tag"></param>
+    void HeitaLautanen(PhysicsObject pelaaja1, String tag)
+    {
+        PhysicsObject lautanen = new PhysicsObject(10, 10);
+        lautanen.IgnoresCollisionResponse = true;
+        lautanen.Image = LoadImage("lautanen");
+        lautanen.Tag = "lautanen";
+        if (pelaaja1Elama>0)
+            {
+            this.pelaaja1.Throw(lautanen, Angle.FromDegrees(20), (500));
+            heittoaani.Play();
+        }
+        AddCollisionHandler(lautanen, "lattia", LautanenOsuu);
+        AddCollisionHandler(lautanen, "lautanen", PuukkoOsuuLautanen);
+        //Pelaaja1.Image = ("klausheitto");
+    }
+
+
+    /// <summary>
+    /// Aliohjelma joka luo loppuvastustaja kokin, sekä kokin elämäpalkin.
+    /// </summary>
+    /// <param Paikka johon kokki luodaan="paikka"></param>
+    /// <param kokin leveys="leveys"></param>
+    /// <param kokin korkeus="korkeus"></param>
+    void LuoKokki(Vector paikka, double leveys, double korkeus)
+    {
+        PlatformCharacter kokki = new PlatformCharacter(25, 35);
+        
+        kokki.Position = paikka;
+        kokki.Image = LoadImage("kokki");
+        kokki.Tag = "Kokki";
+        IntMeter kokkiElama = new IntMeter(kElamaMax, kElamaMin, kElamaMax);
+        kokkiElama.LowerLimit += delegate {kokki.Destroy();MediaPlayer.Play("voittaja"); };
+
+        ProgressBar elamaPalkki = new ProgressBar(40, 5);
+        elamaPalkki.Y = elamaPalkki.Y+35;
+        elamaPalkki.BindTo(kokkiElama);
+        elamaPalkki.Color = Color.Black;
+        elamaPalkki.BorderColor = Color.DarkRed;
+        kokki.Add(elamaPalkki);
+        #region aivot
+        FollowerBrain kokkiSeuraaAivot = new FollowerBrain(pelaaja1);///Kokin tekoäly ja sen arvot
+        kokkiSeuraaAivot.Speed = 200;
+        kokkiSeuraaAivot.DistanceFar = 400;
+        kokki.Brain = kokkiSeuraaAivot;
+        kokkiSeuraaAivot.DistanceToTarget.AddTrigger(500, TriggerDirection.Down, SoitaKauhua);
+        AddCollisionHandler(kokki, "lautanen", delegate(PhysicsObject tormaaja, PhysicsObject lautanen) { KokkiTormaaLautanen(tormaaja, lautanen, kokkiElama); });
+        #endregion
+        Timer heittoAjastin = new Timer();///Ajastin, jonka mukaan kokki heittää veitsiä
+        heittoAjastin.Interval = 1.0;
+        heittoAjastin.Timeout += delegate{if (kokkiElama > 0){HeitaPuukko(kokki);} };
+        heittoAjastin.Start();
+        Add(kokki);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma luo vastustajan ja arpoo sille randomisti kuvan
+    /// </summary>
+    /// <param Paikka, johon vastustaja luodaan="paikka"></param>
+    /// <param Vastustajan leveys="leveys"></param>
+    /// <param Vastustajan korkeus="korkeus"></param>
+    void LuoVastustaja(Vector paikka, double leveys, double korkeus)
+    {
+        List<Image> kuvat = new List<Image>();
+        kuvat.Add(LoadImage("juoppo"));
+        kuvat.Add(LoadImage("juoppo2"));
+        kuvat.Add(LoadImage("juoppo3"));
+        kuvat.Add(LoadImage("puuma"));
+        kuvat.Add(LoadImage("syoppo"));
+        kuvat.Add(LoadImage("syoppo2"));
+        kuvat.Add(LoadImage("syoppo3"));
+        Image arvottuKuva = RandomGen.SelectOne<Image>(kuvat);        
+        PlatformCharacter vastustaja = new PlatformCharacter(25, 35);
+
+        IntMeter vastustajaElama = new IntMeter(vElamaMax, vElamaMin, vElamaMax);
+        vastustajaElama.LowerLimit += delegate { vastustaja.Destroy();};
+
+        ProgressBar vasElamaPalkki = new ProgressBar(40, 5);
+
+        vasElamaPalkki.Y = vasElamaPalkki.Y + 35;
+        vasElamaPalkki.BindTo(vastustajaElama);
+        vasElamaPalkki.Color = Color.Black;
+        vasElamaPalkki.BorderColor = Color.DarkRed;
+        vastustaja.Add(vasElamaPalkki);
+
+
+        vastustaja.Position = paikka;
+        vastustaja.Image = arvottuKuva;
+        PlatformWandererBrain vihuAly = new PlatformWandererBrain();
+        vihuAly.Speed = 100;
+        vastustaja.Brain = vihuAly;
+        vastustaja.Tag = "vastustaja";
+        AddCollisionHandler(vastustaja, "lautanen", delegate (PhysicsObject tormaaja, PhysicsObject lautanen) { VastTormaaLautanen(tormaaja, lautanen, vastustajaElama); });
+
+        Add(vastustaja);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka soittaa jaws-tunnarin
+    /// </summary>
+    void SoitaKauhua()
+    {
+        MediaPlayer.Play("jaws");
+    }
+
+
+    /// <summary>
+    /// Aliohjelma luo lattian
+    /// </summary>
+    /// <param lattian paikka="paikka"></param>
+    /// <param lattian leveys="leveys"></param>
+    /// <param lattian korkeus="korkeus"></param>
+    void LuoLattia(Vector paikka, double leveys, double korkeus)
+    {
+        PhysicsObject lattia = PhysicsObject.CreateStaticObject(leveys, korkeus);
+        lattia.Position = paikka;
+        lattia.Image = LoadImage("lattia");
+        lattia.Tag = "lattia";
+        Add(lattia);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee lautasen osumista lattiaan
+    /// </summary>
+    void LautanenOsuu(PhysicsObject lautanen, PhysicsObject lattia)
+    {
+        lautanenrikki.Play();
+        lautanen.Destroy();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka luo laavan
+    /// </summary>
+    /// <param Laavan sijainti="paikka"></param>
+    void LuoLaava(Vector paikka, double leveys, double korkeus)
+    {
+        PhysicsObject laava = PhysicsObject.CreateStaticObject(leveys, korkeus);
+        laava.Position = paikka;
+        laava.Image = LoadImage("laava");
+        /*laava.AnimIdle = new Animation(laavaanim);
+        laava.AnimIdle.FPS = 8;*/
+        laava.Tag = "laava";
+        Add(laava);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka luo tason, jolla on erikoisominaisuuksia, kuten animaatio ja oman musiikin aloittaminen (Easter-Egg)
+    /// </summary>
+    /// <param name="paikka"></param>
+    /// <param name="leveys"></param>
+    /// <param name="korkeus"></param>
+    void LuoTaso(Vector paikka, double leveys, double korkeus)
+    {
+        PlatformCharacter taso = new PlatformCharacter(leveys, korkeus);
+        taso.Position = paikka;
+        taso.Color = RandomGen.NextColor();
+        taso.Tag = "taso";
+        taso.Image = LoadImage("happy1");
+        taso.AnimIdle = new Animation(disko);
+        taso.AnimIdle.FPS = 8;
+        Add(taso);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma käsittelee pelaajan törmäystä tasoon
+    /// </summary>
+    /// <param name="pelaaja1"></param>
+    /// <param name="taso"></param>
+    void TormaaTaso(PhysicsObject pelaaja1, PhysicsObject taso)
+    {
+            MediaPlayer.Play("sos");       
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka hoitaa kokin "heittämien" puukkojen luonnin ja heittämisen 
+    /// </summary>
+    void HeitaPuukko(PlatformCharacter kokki)
+    {
+        PhysicsObject puukko = new PhysicsObject(10,10);
+        puukko.IgnoresCollisionResponse = true;
+        puukko.Image = LoadImage("puukko");
+        puukko.Tag = "puukko";
+        kokki.Throw(puukko, Angle.FromDegrees(30), (250));
+        AddCollisionHandler(puukko, "lattia", PuukkoOsuu);
+        AddCollisionHandler(puukko, "lautanen", PuukkoOsuuLautanen);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee puukon törmäystä lattiaan
+    /// </summary>
+    void PuukkoOsuu(PhysicsObject puukko, PhysicsObject lattia)
+    {
+        puukko.Destroy();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee puukon osumista pelaajaan
+    /// </summary>
+    /// <param pelaajan elämät="pelaaja1Elama"></param>
+    void PuukkoOsuuPelaaja1(PhysicsObject pelaaja1, PhysicsObject puukko, IntMeter pelaaja1Elama)
+    {
+        puukko.Destroy();
+        kipu.Play();
+        pelaaja1Elama.Value--;
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee puukon osumista lautaseen
+    /// </summary>
+    void PuukkoOsuuLautanen(PhysicsObject lautanen, PhysicsObject puukko)
+    {
+        lautanen.Destroy();
+        puukko.Destroy();
+        lautanenrikki.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee puukon osumista kokkiin
+    /// </summary>
+    /// <param Kokin elämät="kokkiElama"></param>
+    void KokkiTormaaLautanen(PhysicsObject kokki, PhysicsObject lautanen, IntMeter kokkiElama)
+    {
+        kokki.Image = LoadImage("monster");
+        peto.Play();
+        kokki.Height = 50;
+        kokki.Width = 45;
+        kokki.Mass = 5.0;
+        lautanen.Destroy();
+        kokkiElama.Value--;
+
+    }
+
+    /// <summary>
+    /// Aliohjelma, joka luo pisteet maailmaan ja arpoo niille kuvan listasta
+    /// </summary>
+    void LuoPiste(Vector paikka, double leveys, double korkeus)
+    {
+        List<Image> kuvalist = new List<Image>();
+        kuvalist.Add(LoadImage("viina1"));
+        kuvalist.Add(LoadImage("viina2"));
+        kuvalist.Add(LoadImage("viina3"));
+        Image arvottuPisteKuva = RandomGen.SelectOne<Image>(kuvalist);
+
+        PhysicsObject Piste = PhysicsObject.CreateStaticObject(10, 25);
+        Piste.IgnoresCollisionResponse = true;
+        Piste.Position = paikka;
+        Piste.Image = arvottuPisteKuva;
+        Piste.Tag = "Piste";
+        Add(Piste);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka luo salaisuuden pelimaailmaan (Easter-Egg)
+    /// </summary>
+    /// <param name="paikka"></param>
+    /// <param name="leveys"></param>
+    /// <param name="korkeus"></param>
+    void LuoSalaisuus(Vector paikka, double leveys, double korkeus)
+    {
+        PhysicsObject Salaisuus = PhysicsObject.CreateStaticObject(RUUDUN_LEVEYS, RUUDUN_KORKEUS);
+        Salaisuus.IgnoresCollisionResponse = true;
+        Salaisuus.Position = paikka;
+        Salaisuus.Image = LoadImage("salaisuus");
+        Salaisuus.Tag = "Salaisuus";
+        Add(Salaisuus);
+        MediaPlayer.Play("tausta1");
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka luo Hampurilaisia maailmaan
+    /// </summary>
+    void LuoBurger(Vector paikka, double leveys, double korkeus)
+    {
+        PhysicsObject Burge = PhysicsObject.CreateStaticObject(20, 20);
+        Burge.IgnoresCollisionResponse = true;
+        Burge.Position = paikka;
+        Burge.Image = LoadImage("burge");
+        Burge.Tag = "Burge";
+        Add(Burge);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka reagoi Pelaajaa liikuttelevia näppäimiä painamalla ja liikuttaa pelaajaa nopeudella "nopeus"
+    /// </summary>
+    /// <param Nopeus, jolla pelaajaa liikutetaan="nopeus"></param>
+    void Liikuta(PlatformCharacter pelaaja1, double nopeus)
+    {
+        pelaaja1.Walk(nopeus);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka reagoi Pelaajaa hypyttävää näppäintä painamalla ja hypyttää pelaajaa nopeudella "hyppy"
+    /// </summary>
+    /// <param Nopeus jolla pelaaja hyppää="hyppy"></param>
+    void Hyppaa(PlatformCharacter pelaaja1, double hyppy)
+    {
+        pelaaja1.Jump(hyppy);
+        hyppyaani.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka lisää pelaajaa liikuttelevat näppäimet
+    /// </summary>
+    void LisaaNappaimet(PlatformCharacter Pelaaja1)
+    {
+        PhoneBackButton.Listen(ConfirmExit, "Lopeta peli");
+        Keyboard.Listen(Key.Escape, ButtonState.Pressed, ConfirmExit, "Lopeta peli");
+        Keyboard.Listen(Key.Up, ButtonState.Pressed, Hyppaa, "Pelaaja hyppää", Pelaaja1, hyppy);
+        Keyboard.Listen(Key.Left, ButtonState.Down, Liikuta,"Liikkuu vasemmalle" ,Pelaaja1, (-nopeus));
+        Keyboard.Listen(Key.Right, ButtonState.Down, Liikuta, "Liikkuu oikealle", Pelaaja1, (nopeus));
+        Keyboard.Listen(Key.Space, ButtonState.Pressed, HeitaLautanen, "Heita ammus", Pelaaja1, "pelaajanAmmus");
+    }
+    
+
+    /// <summary>
+    /// Aliohjelma, joka lisää laskurit peliin
+    /// </summary>
+    void LisaaLaskurit()
+    {
+        pelaajan1Pisteet = LuoPisteLaskuri(Screen.Right - 100.0, Screen.Top - 100.0, maxPisteet);
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka luo pistelaskurit
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    /// <param name="maxPisteet"></param>
+    /// <returns></returns>
+    IntMeter LuoPisteLaskuri(double x, double y, int maxPisteet)
+    {
+        IntMeter pisteLaskuri = new IntMeter(0);
+        pisteLaskuri.MaxValue = maxPisteet;
+        Widget pisteruutu = new Widget(RUUDUN_LEVEYS*3, RUUDUN_KORKEUS*3);
+        pisteruutu.X = x;
+        pisteruutu.Y = y;
+        pisteruutu.Image = LoadImage("aurinko");
+        Add(pisteruutu);
+        Label pistenaytto = new Label();
+        pistenaytto.BindTo(pisteLaskuri);
+        pisteruutu.Add(pistenaytto);
+        return pisteLaskuri;
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan ja pisteen törmäystä
+    /// </summary>
+    void TormaaPiste(PhysicsObject pelaaja1, PhysicsObject piste)
+    {
+        piste.Destroy();
+        pelaajan1Pisteet.Value++;
+        gulp1.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan ja salaisuuden törmäystä
+    /// </summary>
+    void TormaaSalaisuus(PhysicsObject pelaaja1, PhysicsObject salaisuus)
+    {
+        MessageDisplay.Add("Keräsit SATA pistettä!");
+        salaisuus.Destroy();
+        pelaajan1Pisteet.Value= pelaajan1Pisteet.Value + 100;
+        wheee.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan ja burgerin törmäystä
+    /// </summary>
+    void TormaaBurgeriin(PhysicsObject pelaaja1, PhysicsObject burge, IntMeter pelaaja1Elama)
+    {
+        burge.Destroy();
+        pelaaja1Elama.Value++;
+        omnom.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan ja vastustajan törmäystä
+    /// </summary>
+    void TormaaVastustajaan(PhysicsObject pelaaja1, PhysicsObject vastustaja, IntMeter pelaaja1Elama)
+    {
+        pelaaja1Elama.Value--;
+        kipu.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan ja kokin törmäystä
+    /// </summary>
+    void TormaaKokkiin(PhysicsObject pelaaja1, PhysicsObject kokki)
+    {
+        pelaaja1.Destroy();
+        kuolema1.Play();
+        MessageDisplay.Add("Kokki tappoi sinut");
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan osumista laavaan
+    /// </summary>
+    void TormaaLaava(PhysicsObject pelaaja1, PhysicsObject laava)
+    {
+        MessageDisplay.Add("Menit sitten laavaan uimaan!");
+        laava.IgnoresCollisionResponse = true;
+        kuplinta.Play();
+        pelaaja1.Destroy();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee vastustajan ja lautasen törmäystä
+    /// </summary>
+    void VastTormaaLautanen(PhysicsObject vastustaja, PhysicsObject lautanen, IntMeter vastustajaElama)
+    {
+        lautanen.Destroy();
+        vastustajaElama.Value--;
+        lautanenrikki.Play();
+        huuto.Play();
+    }
+
+
+    /// <summary>
+    /// Aliohjelma, joka käsittelee pelaajan kuoleman
+    /// </summary>
+    void PelaajaKuolee()
+    {
+        GameObject gameOver = new GameObject(RUUDUN_LEVEYS * 4, RUUDUN_KORKEUS *3);
+        gameOver.Image = LoadImage("gameOver");
+        gameOver.Position = pelaaja1.Position;
+        pelaaja1.Destroy();
+        MediaPlayer.Play("havio");
+        Add(gameOver,1);
+    }
+}
